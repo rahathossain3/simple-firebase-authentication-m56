@@ -1,13 +1,14 @@
 /**
  * steps to use firebase
- * 1/ create a project on console.firebase.google.com
- * 2. install firebase
+ * 1. create a project on console.firebase.google.com
+ * 2. npm install firebase
  * 3. Register web app in firebase
  * 4. copy firebase init with config from firebase project settings into a file firebase.init.js 
- * 5. export default app
- * 6. import app firebase init.js into your app.js
- * 7. import getAuth from firebase/auth and create auth = getAuth(app)
+ * 5. export default app from firebase.init.js 
+ * 6. import getAuth from firebase/auth and create const auth = getAuth(app) in App.js
+ * 7. import app firebase init.js into your app.js
  * 8. turn on google authentication.(firebase > authentication > google sing in)
- * 9.  create google provider
- * 10.  
+ * 9. create google provider
+ * 10. use signInWithPopup and Pass auth and provider  
+ * 11. handle .then (if successfully) and catch error (if error)
  */
