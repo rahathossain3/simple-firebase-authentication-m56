@@ -43,6 +43,7 @@ function App() {
     signInWithPopup(auth, githubProvider)
       .then(result => {
         const user = result.user;
+        setUser(user);
         console.log(user)
       })
 
@@ -70,7 +71,7 @@ function App() {
       {
         // condition ? true : false
         //conditional rendering -------------
-        user.email ? <button onClick={handleSingOut} > Sign Out</button>
+        user.uid ? <button onClick={handleSingOut} > Sign Out</button>
           :
           <>
             <button onClick={handleGoogleSignIn}>Google Sign In</button>
